@@ -51,4 +51,32 @@ public class GeeksforGeeks {
         // passing Non-century year
         isLeapYear(2002);
     }
+    #feature201 changes by irfan in aug 0
+    import java.io.File;
+import java.io.IOException;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.encryption.StandardDecryptionMaterial;
+  
+public class Decrypt_pdf {
+    public static void main(String[] args)
+        throws IOException
+    {
+  
+        // select a file for Decryption operation
+        File file = new File("D:\\Bluetooth\\Encrypted.pdf");
+  
+        // Load the PDF file
+        PDDocument pdd = PDDocument.load(file, "12345");
+  
+        // removing all security from PDF file
+        pdd.setAllSecurityToBeRemoved(true);
+  
+        // Save the PDF file
+        pdd.save(file);
+  
+        // Close the PDF file
+        pdd.close();
+        System.out.println("Decryption Done...");
+    }
+}
 }
