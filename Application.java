@@ -51,8 +51,6 @@ public class GeeksforGeeks {
         // passing Non-century year
         isLeapYear(2002);
     }
-<<<<<<< HEAD
-=======
   class Main {
 
   public static void main(String[] args) {
@@ -64,5 +62,5 @@ public class GeeksforGeeks {
     System.out.println(first + " + " + second + " = "  + sum);
   }
 }
->>>>>>> 0a7b94397c4889cd838a3a59063494adcb060f33
+  hello world 
 }
