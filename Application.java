@@ -61,6 +61,5 @@ public class GeeksforGeeks {
     int sum = first + second;
     System.out.println(first + " + " + second + " = "  + sum);
   }
-}
-  hello-world 
+} 
 }
